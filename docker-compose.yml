@@ -1,6 +1,9 @@
 version: '3.5'
 services:
   zerotier:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     image: zerotier
     container_name: zerotier_one
     devices:
