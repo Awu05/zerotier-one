@@ -1,10 +1,7 @@
 version: '3.5'
 services:
   zerotier:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: zerotier
+    image: awu05/zerotier-arm
     container_name: zerotier_one
     devices:
       - /dev/net/tun
